@@ -20,7 +20,7 @@ public:
 
             val1 = (l1 != nullptr) ? l1->val:0;
             val2 = (l2 != nullptr) ? l2->val:0;
-            sum = val1 + val2 + temp->val;
+            sum = val1 + val2 + carry;
             temp->val = sum % 10;
             carry = sum / 10;
             if(l1 != nullptr){
